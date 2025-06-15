@@ -5,6 +5,6 @@
 
 **Carrera:** Ingeniería en Tecnologías de la Información. 
 
-**Docente:** Walter Rodrigo Nuñez Zamora
+**Docente:** Walter Rodrigo Nuñez Zamora.
 
 **Nombre:** Isca Madaí Ortiz Sabando.
