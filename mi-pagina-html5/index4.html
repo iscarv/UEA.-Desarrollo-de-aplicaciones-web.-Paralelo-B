@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panadería Dulce Hogar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Dulce Hogar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center p-4">
+    <h1>Panadería Dulce Hogar</h1>
+  </header>
+
+  <!-- Sección de productos -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="pan.jpg" class="card-img-top img-fluid" alt="Pan fresco">
+          <div class="card-body">
+            <h3 class="card-title">Pan del día</h3>
+            <p class="card-text">Caliente y crujiente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="pastel.jpg" class="card-img-top img-fluid" alt="Pasteles">
+          <div class="card-body">
+            <h3 class="card-title">Pasteles</h3>
+            <p class="card-text">Dulces y suaves.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="bizcocho.JPG" class="card-img-top img-fluid" alt="Bizcochos">
+          <div class="card-body">
+            <h3 class="card-title">Bizcochos</h3>
+            <p class="card-text">Perfectos con café.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón con collapse -->
+  <div class="container text-center mb-4">
+    <button class="btn btn-primary mb-2" data-toggle="collapse" data-target="#infoExtra">
+      Ver promociones
+    </button>
+    <div class="collapse" id="infoExtra">
+      <div class="card card-body">
+        2x1 en bizcochos cada viernes.
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <div class="container mb-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo</label>
+        <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+      </div>
+      <div class="form-group">
+        <label for="comentarios">Mensaje</label>
+        <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe aquí..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+  <p style="color: #000000;">&copy; 2025 Panadería Dulce Hogar</p>
+  <a href="#" style="color: #000000;">Aviso legal</a> |
+  <a href="#" style="color: #000000;">Privacidad</a>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
