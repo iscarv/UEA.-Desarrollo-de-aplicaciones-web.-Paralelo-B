@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto Bootstrap - Página de Productos</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Archivo de estilos personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="bg-primary text-white p-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <h1 class="h3 mb-0">Mi Tienda Online</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#carouselSection" class="nav-link text-white">Inicio</a></li>
+          <li class="nav-item"><a href="#productsSection" class="nav-link text-white">Productos</a></li>
+          <li class="nav-item"><a href="#contactSection" class="nav-link text-white">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Principal -->
+  <main class="container my-4">
+    <!-- Carrusel -->
+    <section id="carouselSection" class="mb-5">
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-3 shadow">
+          <div class="carousel-item active">
+            <img
+              src="Cartera.jpg"
+              class="d-block w-100"
+              alt="Producto Cartera"
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Cartera Elegante</h5>
+              <p>Encuentra esta y muchos más aquí.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Bolsos.jpg"
+              class="d-block w-100"
+              alt="Producto Bolsos"
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Bolsos Modernos</h5>
+              <p>Bolsos de diversos tipos y colores.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Local.jpg"
+              class="d-block w-100"
+              alt="Imagen Local"
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Visita Nuestro Local</h5>
+              <p>Encuentra los mejores productos aquí.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Ropa.jpg"
+              class="d-block w-100"
+              alt="Producto Ropa"
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Ropa a la Moda</h5>
+              <p>Encuentra las últimas tendencias.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#productCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#productCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tabla de productos -->
+    <section id="productsSection" class="mb-5">
+      <h2 class="mb-3">Listado de Productos</h2>
+      <div class="table-responsive shadow rounded">
+        <table class="table table-striped table-hover align-middle">
+          <thead class="table-primary">
+            <tr>
+              <th>Producto</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+              <th>Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bolso de playa</td>
+              <td>Alta calidad, durable y económico</td>
+              <td>$15.99</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Cartera</td>
+              <td>Diseño moderno y elegante</td>
+              <td>$45.00</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Vestido</td>
+              <td>Ideal para uso diario</td>
+              <td>$9.50</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contactSection" class="mb-5">
+      <h2 class="mb-3">Contáctanos</h2>
+      <form id="contactForm" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+            placeholder="Tu nombre"
+          />
+          <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico *</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+            placeholder="correo@ejemplo.com"
+          />
+          <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje *</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Escribe tu mensaje aquí"
+          ></textarea>
+          <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="button" id="alertButton" class="btn btn-secondary ms-2">
+          Mostrar alerta
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>Contacto: info@mitiendaonline.com | Tel: +593 999 999 999</p>
+      <p>
+        Síguenos:
+        <a href="#" class="text-white text-decoration-none ms-2">Facebook</a> |
+        <a href="#" class="text-white text-decoration-none ms-2">Twitter</a> |
+        <a href="#" class="text-white text-decoration-none ms-2">Instagram</a>
+      </p>
+      <small>&copy; 2025 Mi Tienda Online</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS y Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Archivo de script personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Personalización de la tabla para un toque propio */
+table tbody tr:hover {
+  background-color: #e0f7fa; /* color aqua suave */
+  cursor: pointer;
+}
+
+/* Encabezado personalizado */
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de alerta personalizado */
+#alertButton {
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* Pie de página personalizado */
+footer a:hover {
+  text-decoration: underline;
+}
