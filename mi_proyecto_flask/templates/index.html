@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mi Proyecto Flask</title>
-</head>
-<body>
-    <h1>¡Bienvenido a mi proyecto Flask!</h1>
-    <p>Prueba la ruta <a href="/usuario/Isca">/usuario/Isca</a></p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Inicio - Mi Proyecto Flask{% endblock %}
+
+{% block content %}
+<h1>Bienvenido a mi Proyecto Flask</h1>
+<p>Esta es la página principal creada con herencia de plantillas.</p>
+{% endblock %}
 
