@@ -1,5 +1,5 @@
 # UEA.-Desarrollo-de-aplicaciones-web.-Paralelo-B
-**Repositorio de código fuente utilizado en la asignatura de Estructura de datos.**                                                                                                                                  
+**Repositorio de código fuente utilizado en la asignatura de Desarrollo de aplicaciones web.**                                                                                                                                  
 
 **Institución:** Universidad Estatal Amazónica.  
 
